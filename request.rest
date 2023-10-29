@@ -1,0 +1,51 @@
+###
+POST http://localhost:6001/api/user/login
+Content-Type: application/json
+
+{
+    "email":"adel_orosia@yahoo.com",
+    "password":"Janjan12102"
+}
+
+###
+GET http://localhost:6001/api/user/display
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTJlYWZkMGE4Yzk5MzVmYzFkMTJlMTYiLCJmaXJzdE5hbWUiOiJhcmFzaCIsImxhc3ROYW1lIjoiTmFtYXppIiwiZW1haWxVc2VyIjoiYWRlbF9vcm9zaWFAeWFob28uY29tIiwicHJvZmlsZVBob3RvIjoiaHR0cHM6Ly91cGxvYWQud2lraW1lZGlhLm9yZy93aWtpcGVkaWEvY29tbW9ucy90aHVtYi8xLzEyL1VzZXJfaWNvbl8yLnN2Zy84MDBweC1Vc2VyX2ljb25fMi5zdmcucG5nIiwiaXNBY2NvdW50VmVyaWZpZWQiOmZhbHNlLCJpYXQiOjE2OTg0OTI4ODYsImV4cCI6MTY5ODQ5MjkwMX0.goZrXnNZCPulD9JzwAebUB7nt4-65NgMy9LS2Q9fJoY
+
+###
+GET http://localhost:6001/api/user/display/652e535779fa7d397e6059b7
+
+###
+POST http://localhost:6001/api/user/create
+Content-Type: application/json
+
+{
+    "firstName":"behdad",
+    "lastName":"mirbani",
+    "email":"behdad_mirbani@yahoo.com",
+    "password":"1234"
+}
+
+###
+POST http://localhost:6001/api/user/login
+Content-Type: application/json
+
+{
+    "email":"behdad_mirbani@yahoo.com",
+    "password":"1234"
+}
+
+###
+PUT http://localhost:6001/api/user/update/653ade7e689274ec7c659561
+Content-Type: application/json
+
+{
+    "firstName":"Ghulam",
+    "lastName":"karimi",
+    "email":"ghulam_karimi@yahoo.com",
+    "password":"1234"
+}
+
+###
+DELETE http://localhost:6001/api/user/delete/652e535779fa7d397e6059b7
+
+
